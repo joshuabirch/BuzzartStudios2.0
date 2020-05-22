@@ -52,6 +52,11 @@
 .parallax-container {
     height: 900px;
 }     
+
+.parallax-container .parallax img {
+    display: unset;
+}
+
 .section {
     background-color: #90ee90;
 }
