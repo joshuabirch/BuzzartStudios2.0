@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookings</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to Buzzart Studios" />
+    <meta name="keywords" content="" />
+    
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    
+    <link type="text/css" rel="stylesheet" href="css/bookingscss.css"/>
+    
+    
+    <script type=text/javascript src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+    
+    <link rel="shortcut icon" href="assets/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="icon" href="assets/favicon/favicon-16x16.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+<body class="fadeIn">
+    
+    <script>
+        $( document ).ready(function(){
+            $(".button-collapse").sideNav();
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function(){
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+        });
+    </script>
+    
+   
+    
+        <nav>
+            <div class="nav-wrapper">
+                <a href="index.html" class="brand-logo"><img src="assets/favicon/android-icon-48x48.png"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="services.html">Services</a></li>
+                    <li class="active"><a href="#">Bookings</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="bookings.html">Bookings</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li class="active"><a href="shop.html">Shop</a></li>
+                </ul>
+            </div>
+       </nav>
+    
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Bookings</h1>
+        </div>
+    </div>
+    
+    <div class="intro">
+        <div class="container">
+            <p class="intro-text">Here at Buzzart Studios, we give you the chance to book a consulation in order to find the style, design and finish for your personal tattoo. You can book this consultation through our booking system below. Please bare in mind it is the artists job to contact you, therefore in the event of a busy period, we kindly ask you to be patient with replies.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+    
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Last Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="icon_email" type="email" class="validate">
+                        <label for="icon_email" data-error="wrong" data-success="right">E-Mail</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone" data-error="wrong" data-success="right">Telephone</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">date_range</i>
+                        <input id=icon_date type="date" class="datepicker">
+                        <label for="icon_date">Date</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+                        <label for="textarea1">Tell Us About The Tattoo You Desire</label>
+                    </div>
+                    <div id="buttonclass" class="col s12">
+                        <button class="btn waves-effect waves-light modal-trigger" type="submit" name="action" href="#modal1">Submit
+                            <i id="sendbutton" class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Thank You</h4>
+                <p>Your booking has been sent to us. We'll contact you in 7-10 working days to arrange a time for your selected date.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+            </div>
+        </div>
+          
+        
+        
+    </div>
+    
+    
+     <script>
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 1 // Creates a dropdown of 15 years to control year
+        });
+    </script>
+    
+    <script>
+        $('.timepicker').pickatime({
+            default: 'now', // Set default time: 'now', '1:30AM', '16:30'
+            fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+            twelvehour: false, // Use AM/PM or 24-hour format
+            donetext: 'OK', // text for done-button
+            cleartext: 'Clear', // text for clear-button
+            canceltext: 'Cancel', // Text for cancel-button
+            autoclose: false, // automatic close timepicker
+            ampmclickable: true, // make AM PM clickable
+            aftershow: function(){} //Function for after opening timepicker
+  });
+    </script>
+    
+    <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l12 s12">
+                <h5 class="white-text">Buzzart Studios</h5>
+                <p class="grey-text text-lighten-4">We Pride in Excellence & Quality</p>
+                  
+                <a href="https://www.facebook.com/buzzartstudios/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/BuzzartStudios" class="fa fa-twitter"></a>
+    
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Buzzart Studios
+            </div>
+          </div>
+        </footer>
+    
+    

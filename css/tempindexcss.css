@@ -1,0 +1,71 @@
+html,
+body,
+div,
+h1,
+p,
+a,
+video {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Nosifer", cursive;
+  line-height: 2;
+}
+
+.content {
+  position: relative;
+  top: 10%;
+  z-index: 2;
+  margin: 0 auto;
+  max-width: 720px;
+  text-align: center;
+}
+
+.content img {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.content_teaser {
+  margin-bottom: 24px;
+  color: #f261ff;
+  font-size: 22px;
+}
+
+.content_cta {
+  display: inline-block;
+  margin: 0;
+  padding: 12px 48px;
+  color: #f261ff;
+  font-size: 22px;
+  text-decoration: none;
+  border: solid 4px #f261ff;
+}
+
+.content_cta:hover {
+    color: lightgreen;
+    border: solid 4px lightgreen;
+}
+
+.video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}

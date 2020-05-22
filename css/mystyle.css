@@ -1,0 +1,228 @@
+.fadeIn {
+    opacity: 0;
+    animation: fadeIn 1.8s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nav-wrapper {
+    background-color: #90ee90;
+    font-family: 'Nosifer', cursive;
+}
+
+.nav-wrapper li a {
+    color: #f261ff;
+}
+
+.nav-wrapper li a:hover{
+    color: white;
+}
+
+.brand-logo {
+    padding: 5px;
+    margin: 5px;
+}
+
+.balogo {
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    
+}
+
+.balogo {
+    text-align: center;
+}
+
+.parallax-container {
+    height: 900px;
+}     
+.section {
+    background-color: #90ee90;
+}
+
+.welcome {
+    padding: 0px;
+    margin: 0px;
+}
+
+.info {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+.Cannock {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+.CannockHeader {
+    font-family: 'Nosifer', cursive;
+    text-align: center;
+    font-size: 48px;
+    color: #f261ff;
+}
+
+
+.LichfieldHeader {
+    font-family: 'Nosifer', cursive;
+    text-align: center;
+    font-size: 48px;
+    color: #f261ff;
+}
+
+.Lichfield {
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+}
+
+
+
+.card-title {
+    color: white;
+}
+
+.material-icons {
+    color: white;
+}
+
+.card-panel {
+    background-color: #f261ff;
+}
+
+.header {
+    font-size: 48px;
+    font-family: 'Nosifer', cursive;
+    color: #f261ff;
+    text-align: center;
+}
+
+
+.card-content {
+    background-color: #f261ff;
+    color: white;
+}
+
+.card-title {
+    color: #fff;
+    font-family: 'Nosifer', cursive;
+}
+
+.card-reveal {
+    background-color: #000;
+}
+
+.btn {
+    margin: 10px;
+    background-color: #90ee90;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+.btn-floating {
+    background-color: #90ee90;
+}
+
+.card-action {
+    text-align: center;
+}
+
+.card-reveal {
+    text-align: center;
+}
+
+.white-text {
+    text-align: center;
+}
+
+
+.page-footer {
+    background-color: #f261ff;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+
+.page-footer .col {
+    text-align: center;
+}
+
+.page-footer h5 {
+    font-family: 'Nosifer', cursive;
+}
+
+
+.fa {
+    margin: 5px;
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+.fa:hover {
+    opacity: 0.2;
+}
+
+
+.fa-facebook {
+    color: white;
+}
+
+
+.fa-twitter {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.mobilelogo {
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+@media all and (max-width: 600px) {
+    .balogo {
+        opacity: 0;
+    }
+    .mobilelogo {
+        opacity: 1;
+    }
+    
+}
